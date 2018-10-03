@@ -1,11 +1,11 @@
 # React Native Single Page Starter with Expo
 
-## install
+### install
 `yarn install`
 
 ***note:*** *make sure you at least have node ^v10.8.0*
 
-### run on physical device
+### development on a physical device
 - first, your machine and physical device should be on the same wifi connection
 - make sure you have Expo CLI installed globally, if not run: `npm install -g expo-cli`
 - then navigate to this project's directory on your machine and run: `expo start`
