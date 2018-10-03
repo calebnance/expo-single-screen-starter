@@ -7,11 +7,15 @@
 
 ### development on a physical device
 - first, your machine and physical device should be on the same wifi connection
-- make sure you have Expo CLI installed globally, if not run: `npm install -g expo-cli`
-- then navigate to this project's directory on your machine and run: `expo start`
-- now download the Expo Client app on your preferred physical device: **Android** [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent) and/or **Apple** [App Store](https://itunes.apple.com/us/app/expo-client/id982107779)
-- scan the QR code generated when this project was started, allow the build to compile and you should be good to go!
-  - *for apple users:* if you have at least iOS 11, you can open your camera app up to scan the QR code.
+- make sure you have Expo CLI installed globally, if not run:
+  - `npm install -g expo-cli`
+- then navigate to this project's directory on your machine and run:
+  - `expo start`
+- now download the Expo Client app on your preferred physical device:
+  - **Android:** [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
+  - **Apple:** [App Store](https://itunes.apple.com/us/app/expo-client/id982107779)
+- scan the QR code generated when this project build was started (expo start)
+- *for apple users:* if you have at least iOS 11, you can open your camera app up to scan the QR code.
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
 ## project notes
