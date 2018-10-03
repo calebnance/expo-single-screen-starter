@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "expo-single-page",
-    "description": "simple single page application",
+    "description": "simple single page application starter with expo",
     "slug": "expo-single-page",
     "privacy": "public",
     "sdkVersion": "30.0.0",
