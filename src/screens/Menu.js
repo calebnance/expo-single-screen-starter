@@ -16,6 +16,7 @@ class Menu extends React.Component {
     }
 
     this.state = {
+      backgroundColor: new Animated.Value(0),
       position: new Animated.Value(positionStart),
       positionStart
     };
@@ -25,7 +26,13 @@ class Menu extends React.Component {
 
   componentDidMount() {
     // console.log('Menu::componentDidMount()');
-    const { position } = this.state;
+    const { backgroundColor, position } = this.state;
+
+    Animated.timing(backgroundColor, {
+      delay: 200,
+      duration: 400,
+      toValue: 10
+    }).start();
 
     Animated.timing(position, {
       toValue: 0,
@@ -39,11 +46,15 @@ class Menu extends React.Component {
 
   handleClose() {
     const { onClose } = this.props;
-    const { position, positionStart } = this.state;
+    const { backgroundColor, position, positionStart } = this.state;
+
+    Animated.timing(backgroundColor, {
+      toValue: 0,
+      duration: 400
+    }).start();
 
     Animated.timing(position, {
       toValue: positionStart,
-      // delay: 400,
       duration: 400
     }).start(() => {
       onClose();
@@ -53,11 +64,16 @@ class Menu extends React.Component {
   renderLayout() {
     const { direction } = this.props;
     let render = '';
+    const color = this.state.backgroundColor.interpolate({
+      inputRange: [0, 10],
+      outputRange: [colors.white0, colors.white20]
+    });
+
     if (direction === 'left') {
       render = (
-        <View
+        <Animated.View
           style={{
-            backgroundColor: colors.white50,
+            backgroundColor: color,
             alignItems: 'stretch',
             flex: 1,
             flexDirection: 'row',
@@ -68,7 +84,7 @@ class Menu extends React.Component {
         >
           <ScrollView
             style={{
-              backgroundColor: 'blue',
+              backgroundColor: colors.brandPrimary,
               height: '100%',
               width: '80%'
             }}
@@ -77,6 +93,7 @@ class Menu extends React.Component {
               style={{
                 backgroundColor: colors.white,
                 height: 75,
+                marginTop: device.iPhoneX ? 40 : 0,
                 width: '100%'
               }}
             />
@@ -88,7 +105,7 @@ class Menu extends React.Component {
               width: '20%'
             }}
           />
-        </View>
+        </Animated.View>
       );
     } else if (direction === 'right') {
       render = (
