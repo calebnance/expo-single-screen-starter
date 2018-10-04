@@ -41,3 +41,6 @@
   - `.eslintrc`
   - `.prettierignore`
   - `.prettierrc`
+
+### assets
+- [black rabbit icon](https://thenounproject.com/search/?q=rabbit&i=1211060) was bought (royalty-free license)
