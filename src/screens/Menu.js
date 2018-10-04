@@ -63,8 +63,10 @@ class Menu extends React.Component {
 
   renderLayout() {
     const { direction } = this.props;
+    const { backgroundColor } = this.state;
+
     let render = '';
-    const color = this.state.backgroundColor.interpolate({
+    const color = backgroundColor.interpolate({
       inputRange: [0, 10],
       outputRange: [colors.white0, colors.white20]
     });
@@ -86,6 +88,7 @@ class Menu extends React.Component {
             style={{
               backgroundColor: colors.brandPrimary,
               height: '100%',
+              paddingTop: device.iPhoneX ? 44 : 0,
               width: '80%'
             }}
           >
@@ -93,7 +96,31 @@ class Menu extends React.Component {
               style={{
                 backgroundColor: colors.white,
                 height: 75,
-                marginTop: device.iPhoneX ? 40 : 0,
+                marginBottom: 20,
+                width: '100%'
+              }}
+            />
+            <View
+              style={{
+                backgroundColor: colors.white,
+                height: 75,
+                marginBottom: 20,
+                width: '100%'
+              }}
+            />
+            <View
+              style={{
+                backgroundColor: colors.white,
+                height: 75,
+                marginBottom: 20,
+                width: '100%'
+              }}
+            />
+            <View
+              style={{
+                backgroundColor: colors.white,
+                height: 75,
+                marginBottom: 20,
                 width: '100%'
               }}
             />
