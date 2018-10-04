@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { colors, device } from './src/api/constants';
+import { colors } from './src/api/constants';
 
 // component(s)
 import Touch from './src/components/Touch';

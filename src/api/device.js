@@ -18,5 +18,7 @@ if (
 }
 
 export default {
-  iPhoneX
+  height,
+  iPhoneX,
+  width
 };
