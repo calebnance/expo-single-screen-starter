@@ -35,9 +35,22 @@ export default class App extends React.Component {
     });
   }
 
-  render() {
+  renderMenus() {
     const { showLeftMenu, showRightMenu } = this.state;
+    let menuScreen = null;
 
+    if (showLeftMenu) {
+      menuScreen = <Menu show={showLeftMenu} onClose={this.menuClose} />;
+    } else if (showRightMenu) {
+      menuScreen = (
+        <Menu direction="right" show={showRightMenu} onClose={this.menuClose} />
+      );
+    }
+
+    return menuScreen;
+  }
+
+  render() {
     return (
       <View style={styles.container}>
         <Text style={styles.text}>welcome!</Text>
@@ -56,8 +69,7 @@ export default class App extends React.Component {
           onPress={() => this.menuOpen('showRightMenu')}
         />
 
-        <Menu show={showLeftMenu} onClose={this.menuClose} />
-        <Menu direction="right" show={showRightMenu} onClose={this.menuClose} />
+        {this.renderMenus()}
       </View>
     );
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Animated, ScrollView, View } from 'react-native';
+import { Animated, ScrollView, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { colors, device } from '../api/constants';
 
@@ -10,56 +10,51 @@ class Menu extends React.Component {
   constructor(props) {
     super(props);
 
-    let startPos = -device.width;
+    let positionStart = -device.width;
     if (props.direction === 'right') {
-      startPos = device.width;
+      positionStart = device.width;
     }
 
     this.state = {
-      position: new Animated.Value(startPos)
+      position: new Animated.Value(positionStart),
+      positionStart
     };
+
+    this.handleClose = this.handleClose.bind(this);
   }
 
   componentDidMount() {
-    console.log('Menu::componentDidMount()');
-  }
-
-  componentDidUnMount() {
-    console.log('Menu::componentDidUnMount()');
-  }
-
-  componentDidUpdate(prevProps) {
-    console.log('Menu::componentDidUpdate()');
-
-    const { show } = this.props;
-    const { position } = this.state;
-    if (show !== prevProps.show) {
-      Animated.timing(position, {
-        toValue: 0,
-        // delay: 400,
-        duration: 400
-      }).start();
-    }
-  }
-
-  render() {
-    const { show } = this.props;
+    // console.log('Menu::componentDidMount()');
     const { position } = this.state;
 
-    if (show === false) {
-      return null;
-    }
+    Animated.timing(position, {
+      toValue: 0,
+      duration: 400
+    }).start();
+  }
 
-    return (
-      <Animated.View
-        style={{
-          height: '100%',
-          left: position,
-          position: 'absolute',
-          width: '100%',
-          zIndex: 100
-        }}
-      >
+  // componentWillUnmount() {
+  // console.log('Menu::componentWillUnmount()');
+  // }
+
+  handleClose() {
+    const { onClose } = this.props;
+    const { position, positionStart } = this.state;
+
+    Animated.timing(position, {
+      toValue: positionStart,
+      // delay: 400,
+      duration: 400
+    }).start(() => {
+      onClose();
+    });
+  }
+
+  renderLayout() {
+    const { direction } = this.props;
+    let render = '';
+    if (direction === 'left') {
+      render = (
         <View
           style={{
             backgroundColor: colors.white50,
@@ -87,13 +82,63 @@ class Menu extends React.Component {
             />
           </ScrollView>
           <Touch
-            onPress={() => this.props.onClose()}
+            onPress={() => this.handleClose()}
             style={{
               height: '100%',
               width: '20%'
             }}
           />
         </View>
+      );
+    } else if (direction === 'right') {
+      render = (
+        <View
+          style={{
+            backgroundColor: colors.white50,
+            flex: 1,
+            flexDirection: 'row'
+          }}
+        >
+          <Touch
+            onPress={() => this.handleClose()}
+            style={{
+              height: '100%',
+              width: '20%'
+            }}
+          />
+          <ScrollView
+            style={{
+              backgroundColor: 'blue',
+              height: '100%',
+              width: '80%'
+            }}
+          >
+            <View
+              style={{
+                backgroundColor: colors.white,
+                height: 75,
+                width: '100%'
+              }}
+            />
+          </ScrollView>
+        </View>
+      );
+    }
+
+    return render;
+  }
+
+  render() {
+    const { show } = this.props;
+    const { position } = this.state;
+
+    if (show === false) {
+      return null;
+    }
+
+    return (
+      <Animated.View style={[styles.container, { left: position }]}>
+        {this.renderLayout()}
       </Animated.View>
     );
   }
@@ -109,5 +154,14 @@ Menu.propTypes = {
   // optional
   direction: PropTypes.string
 };
+
+const styles = StyleSheet.create({
+  container: {
+    height: '100%',
+    position: 'absolute',
+    width: '100%',
+    zIndex: 100
+  }
+});
 
 export default Menu;
