@@ -1,5 +1,14 @@
 # React Native Single Page Starter with Expo
 
+
+- [install](#install)
+- [development on a physical device](#development-on-a-physical-device)
+- [testing with jest](#testing-with-jest)
+- [linting - prettier and airbnb config](#linting-prettier-and-airbnb-config)
+- [helpful links](#helpful-links)
+- [adding linter](#adding-linter-config-to-another-react-project)
+- [assets](#assets)
+
 ### install
 `yarn install`
 
@@ -18,7 +27,13 @@
 - *for apple users:* if you have at least iOS 11, you can open your camera app up to scan the QR code.
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
-## project notes
+### testing with jest
+- run: `npm test`
+- this will generate
+  - a report with the console
+  - a html code coverage report within `/coverage/`
+- ***helpful notes:***
+  - for animation and delays, make sure you add: `jest.useFakeTimers();`
 
 ### linting: prettier and airbnb config
 - make sure you have [prettier package](https://atom.io/packages/prettier-atom) installed on your atom/vscode editor
@@ -28,19 +43,11 @@
   - automatic format on save (toggle format on save)
 - be aware of the `.prettierignore` file
 
-### testing with jest
-- run: `npm test`
-- this will generate
-  - a report with the console
-  - a html code coverage report within `/coverage/`
-- ***helpful notes:***
-  - for animation and delays, make sure you add: `jest.useFakeTimers();`
-
 ### helpful links
 - [using nvm](https://davidwalsh.name/nvm)
 - [setup prettier/eslint within project](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 
-### adding this linter config to another project
+### adding linter config to another react project
 - yarn:
   - `yarn add eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react prettier --dev`
 - npm:
