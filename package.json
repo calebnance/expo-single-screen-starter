@@ -19,7 +19,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz"
   },
   "author": "Caleb Nance",
-  "license": "ISC",
+  "license": "MIT",
   "keywords": [
     "react-native",
     "expo"
