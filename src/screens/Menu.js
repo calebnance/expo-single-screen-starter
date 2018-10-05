@@ -28,7 +28,7 @@ class Menu extends React.Component {
     const { backgroundColor, position } = this.state;
 
     Animated.timing(backgroundColor, {
-      delay: 200,
+      delay: 100,
       duration: 400,
       toValue: 10
     }).start();
