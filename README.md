@@ -1,6 +1,5 @@
 # React Native Single Page Starter with Expo
 
-
 - [install](#install)
 - [development on a physical device](#development-on-a-physical-device)
 - [testing with jest](#testing-with-jest)
@@ -38,7 +37,7 @@
 - ***helpful notes:***
   - for animation and delays, make sure you add: `jest.useFakeTimers();`
 
-### linting: prettier and airbnb config
+## linting: prettier and airbnb config
 - make sure you have [prettier package](https://atom.io/packages/prettier-atom) installed on your atom/vscode editor
 - then make sure to enable these options (packages → prettier):
   - eslint integration
