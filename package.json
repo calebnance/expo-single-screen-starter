@@ -8,7 +8,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "node_modules/.bin/jest",
+    "testWatch": "node_modules/.bin/jest --watch"
   },
   "dependencies": {
     "expo": "^30.0.1",
@@ -30,6 +32,19 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.14.3"
+    "jest-expo": "^30.0.0",
+    "prettier": "^1.14.3",
+    "react-test-renderer": "^16.5.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "verbose": true
   }
 }

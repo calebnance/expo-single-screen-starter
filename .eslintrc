@@ -6,5 +6,11 @@
     "no-use-before-define": 0,
     "react/forbid-prop-types": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "globals": {
+    "describe": 0,
+    "expect": 0,
+    "it": 0,
+    "jest": 0
   }
 }
