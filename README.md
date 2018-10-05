@@ -25,8 +25,9 @@
   - **Android:** [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
   - **Apple:** [App Store](https://itunes.apple.com/us/app/expo-client/id982107779)
 - scan the QR code generated when this project build started (expo start)
-  - *android users:* the QR scanner is built within the Expo Client app! 🤗
-  - *ios users:* iOS 11 and later; you can open your camera app to scan the QR code, apple made the Expo peeps remove the QR scanner from the app for some reason... 🤔 
+  - **android users:** the QR scanner is built within the Expo Client app! 🤗
+  - **ios 11 and later:** you can open your camera app to scan the QR code, apple made the Expo peeps remove the QR scanner from the app for some reason... 🤔
+  - **ios 10 and below:** i wrote about a work around to [get expo running on older iOS devices](https://blog.calebnance.com/expo/getting-expo-to-work-on-older-iphones-with-no-qr-support.html)
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
 ### testing with jest
