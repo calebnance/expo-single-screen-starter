@@ -28,6 +28,12 @@
   - automatic format on save (toggle format on save)
 - be aware of the `.prettierignore` file
 
+### testing with jest
+- run: `npm test`
+- this will generate
+  - a report with the console
+  - a html code coverage report within `/coverage/`
+
 ### helpful links
 - [using nvm](https://davidwalsh.name/nvm)
 - [setup prettier/eslint within project](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
