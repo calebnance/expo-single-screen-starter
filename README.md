@@ -10,12 +10,12 @@
 - [assets](#assets)
 - [demo](#demo)
 
-### install
+## install
 `yarn install`
 
 ***note:*** *make sure you at least have node ^v10.8.0*
 
-### development on a physical device
+## development on a physical device
 - first, your machine and physical device should be on the same wifi connection
 - make sure you have Expo CLI installed globally, if not run:
   - `npm install -g expo-cli`
@@ -30,7 +30,7 @@
   - **ios 10 and below:** i wrote about a work around to [get expo running on older iOS devices](https://blog.calebnance.com/expo/getting-expo-to-work-on-older-iphones-with-no-qr-support.html)
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
-### testing with jest
+## testing with jest
 - run: `npm test`
 - this will generate
   - a report within the console
@@ -46,11 +46,11 @@
   - automatic format on save (toggle format on save)
 - be aware of the `.prettierignore` file
 
-### helpful links
+## helpful links
 - [using nvm](https://davidwalsh.name/nvm)
 - [setup prettier/eslint within project](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 
-### adding linter config to another react project
+## adding linter config to another react project
 - yarn:
   - `yarn add eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react prettier --dev`
 - npm:
@@ -60,10 +60,10 @@
   - `.prettierignore`
   - `.prettierrc`
 
-### assets
+## assets
 - [black rabbit icon](https://thenounproject.com/search/?q=rabbit&i=1211060) was bought (royalty-free license)
 
-### demo
+## demo
 below is the inspiration for this single page app starter functionality with side by side comparison
 
 **version: 0.0.1**
