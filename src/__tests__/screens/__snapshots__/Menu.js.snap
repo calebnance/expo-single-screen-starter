@@ -9,7 +9,7 @@ exports[`Menu screen from left renders correctly 1`] = `
       "left": -750,
       "position": "absolute",
       "width": "100%",
-      "zIndex": 100,
+      "zIndex": 50,
     }
   }
 >
@@ -76,7 +76,7 @@ exports[`Menu screen from right renders correctly 1`] = `
       "left": 750,
       "position": "absolute",
       "width": "100%",
-      "zIndex": 100,
+      "zIndex": 50,
     }
   }
 >

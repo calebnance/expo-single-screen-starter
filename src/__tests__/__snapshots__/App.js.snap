@@ -11,6 +11,36 @@ exports[`App renders correctly 1`] = `
     }
   }
 >
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "#fff",
+        "borderRadius": 4,
+        "paddingVertical": 8,
+        "position": "absolute",
+        "top": 20,
+        "width": 200,
+        "zIndex": 70,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#d7263d",
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "textAlign": "center",
+        }
+      }
+    >
+      info bar
+    </Text>
+  </View>
   <Text
     accessible={true}
     allowFontScaling={true}
