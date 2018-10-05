@@ -5,7 +5,8 @@ import { colors, device } from './src/api/constants';
 // screens
 import Menu from './src/screens/Menu';
 
-// component(s)
+// components
+import InfoBar from './src/components/InfoBar';
 import Touch from './src/components/Touch';
 
 export default class App extends React.Component {
@@ -68,6 +69,8 @@ export default class App extends React.Component {
           hidden={statusBarHidd}
           showHideTransition={statusBarTrans}
         />
+
+        <InfoBar text="info bar" />
 
         <Text style={styles.text}>welcome!</Text>
         <Text style={styles.text}>

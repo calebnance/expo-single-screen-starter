@@ -25,7 +25,6 @@ class Menu extends React.Component {
   }
 
   componentDidMount() {
-    // console.log('Menu::componentDidMount()');
     const { backgroundColor, position } = this.state;
 
     Animated.timing(backgroundColor, {
@@ -39,10 +38,6 @@ class Menu extends React.Component {
       toValue: 0
     }).start();
   }
-
-  // componentWillUnmount() {
-  // console.log('Menu::componentWillUnmount()');
-  // }
 
   handleClose() {
     const { onClose } = this.props;
@@ -144,7 +139,7 @@ const styles = StyleSheet.create({
     height: '100%',
     position: 'absolute',
     width: '100%',
-    zIndex: 100
+    zIndex: 50
   },
   panel: {
     flex: 1,
@@ -160,7 +155,7 @@ const styles = StyleSheet.create({
     width: '20%'
   },
   mockBlock: {
-    backgroundColor: colors.white,
+    backgroundColor: colors.grey,
     height: 75,
     marginBottom: 20,
     width: '100%'
