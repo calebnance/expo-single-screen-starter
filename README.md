@@ -34,6 +34,9 @@
   - a report with the console
   - a html code coverage report within `/coverage/`
 
+***helpful notes:***
+- for animation and delays, make sure you add: `jest.useFakeTimers();`
+
 ### helpful links
 - [using nvm](https://davidwalsh.name/nvm)
 - [setup prettier/eslint within project](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
