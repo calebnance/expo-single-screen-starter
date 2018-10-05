@@ -35,8 +35,8 @@ class Menu extends React.Component {
     }).start();
 
     Animated.timing(position, {
-      toValue: 0,
-      duration: 400
+      duration: 400,
+      toValue: 0
     }).start();
   }
 
@@ -49,13 +49,13 @@ class Menu extends React.Component {
     const { backgroundColor, position, positionStart } = this.state;
 
     Animated.timing(backgroundColor, {
-      toValue: 0,
-      duration: 400
+      duration: 100,
+      toValue: 0
     }).start();
 
     Animated.timing(position, {
-      toValue: positionStart,
-      duration: 400
+      duration: 400,
+      toValue: positionStart
     }).start(() => {
       onClose();
     });
@@ -71,101 +71,36 @@ class Menu extends React.Component {
       outputRange: [colors.white0, colors.white20]
     });
 
+    const mockItems = [];
+
+    for (let i = 0; i < 20; i += 1) {
+      mockItems.push(<View key={i} style={styles.mockBlock} />);
+    }
+
+    const scrollViewArea = (
+      <ScrollView style={styles.scrollView}>
+        {mockItems}
+        <View style={styles.listSpacer} />
+      </ScrollView>
+    );
+
+    const closeArea = (
+      <Touch onPress={() => this.handleClose()} style={styles.closeArea} />
+    );
+
     if (direction === 'left') {
       render = (
-        <Animated.View
-          style={{
-            backgroundColor: color,
-            alignItems: 'stretch',
-            flex: 1,
-            flexDirection: 'row',
-            justifyContent: 'flex-start',
-            height: '100%',
-            width: '100%'
-          }}
-        >
-          <ScrollView
-            style={{
-              backgroundColor: colors.brandPrimary,
-              height: '100%',
-              paddingTop: device.iPhoneX ? 44 : 0,
-              width: '80%'
-            }}
-          >
-            <View
-              style={{
-                backgroundColor: colors.white,
-                height: 75,
-                marginBottom: 20,
-                width: '100%'
-              }}
-            />
-            <View
-              style={{
-                backgroundColor: colors.white,
-                height: 75,
-                marginBottom: 20,
-                width: '100%'
-              }}
-            />
-            <View
-              style={{
-                backgroundColor: colors.white,
-                height: 75,
-                marginBottom: 20,
-                width: '100%'
-              }}
-            />
-            <View
-              style={{
-                backgroundColor: colors.white,
-                height: 75,
-                marginBottom: 20,
-                width: '100%'
-              }}
-            />
-          </ScrollView>
-          <Touch
-            onPress={() => this.handleClose()}
-            style={{
-              height: '100%',
-              width: '20%'
-            }}
-          />
+        <Animated.View style={[styles.panel, { backgroundColor: color }]}>
+          {scrollViewArea}
+          {closeArea}
         </Animated.View>
       );
     } else if (direction === 'right') {
       render = (
-        <View
-          style={{
-            backgroundColor: colors.white50,
-            flex: 1,
-            flexDirection: 'row'
-          }}
-        >
-          <Touch
-            onPress={() => this.handleClose()}
-            style={{
-              height: '100%',
-              width: '20%'
-            }}
-          />
-          <ScrollView
-            style={{
-              backgroundColor: 'blue',
-              height: '100%',
-              width: '80%'
-            }}
-          >
-            <View
-              style={{
-                backgroundColor: colors.white,
-                height: 75,
-                width: '100%'
-              }}
-            />
-          </ScrollView>
-        </View>
+        <Animated.View style={[styles.panel, { backgroundColor: color }]}>
+          {closeArea}
+          {scrollViewArea}
+        </Animated.View>
       );
     }
 
@@ -190,13 +125,18 @@ class Menu extends React.Component {
 
 // default props
 Menu.defaultProps = {
-  direction: 'left'
+  direction: 'left',
+  show: false
 };
 
 // type checking
 Menu.propTypes = {
+  // required
+  onClose: PropTypes.func.isRequired,
+
   // optional
-  direction: PropTypes.string
+  direction: PropTypes.string,
+  show: PropTypes.bool
 };
 
 const styles = StyleSheet.create({
@@ -205,6 +145,28 @@ const styles = StyleSheet.create({
     position: 'absolute',
     width: '100%',
     zIndex: 100
+  },
+  panel: {
+    flex: 1,
+    flexDirection: 'row'
+  },
+  scrollView: {
+    backgroundColor: colors.brown,
+    paddingTop: device.iPhoneX ? 44 : 0,
+    width: '80%'
+  },
+  closeArea: {
+    height: '100%',
+    width: '20%'
+  },
+  mockBlock: {
+    backgroundColor: colors.white,
+    height: 75,
+    marginBottom: 20,
+    width: '100%'
+  },
+  listSpacer: {
+    height: device.iPhoneX ? 44 : 0
   }
 });
 

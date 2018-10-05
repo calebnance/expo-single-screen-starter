@@ -26,7 +26,9 @@ Touch.defaultProps = {
   opacityActive: utilStyles.opacityActive,
   style: {},
   text: '',
-  textStyle: {}
+  textStyle: {
+    textAlign: 'center'
+  }
 };
 
 // type checking

@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { colors } from './src/api/constants';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import { colors, device } from './src/api/constants';
 
 // screens
 import Menu from './src/screens/Menu';
@@ -14,24 +14,31 @@ export default class App extends React.Component {
 
     this.state = {
       showLeftMenu: false,
-      showRightMenu: false
+      showRightMenu: false,
+      statusBar: 'light-content',
+      statusBarHidd: false,
+      statusBarTrans: 'slide'
     };
 
-    this.menuOpen = this.menuOpen.bind(this);
     this.menuClose = this.menuClose.bind(this);
-  }
-
-  menuOpen(showMenu) {
-    this.setState({
-      showLeftMenu: showMenu === 'showLeftMenu',
-      showRightMenu: showMenu === 'showRightMenu'
-    });
+    this.menuOpen = this.menuOpen.bind(this);
   }
 
   menuClose() {
     this.setState({
       showLeftMenu: false,
-      showRightMenu: false
+      showRightMenu: false,
+      statusBar: 'light-content',
+      statusBarHidd: false
+    });
+  }
+
+  menuOpen(showMenu) {
+    this.setState({
+      showLeftMenu: showMenu === 'showLeftMenu',
+      showRightMenu: showMenu === 'showRightMenu',
+      statusBar: 'dark-content',
+      statusBarHidd: true
     });
   }
 
@@ -51,8 +58,17 @@ export default class App extends React.Component {
   }
 
   render() {
+    const { statusBar, statusBarHidd, statusBarTrans } = this.state;
+
     return (
       <View style={styles.container}>
+        <StatusBar
+          backgroundColor={colors.blue}
+          barStyle={statusBar}
+          hidden={statusBarHidd}
+          showHideTransition={statusBarTrans}
+        />
+
         <Text style={styles.text}>welcome!</Text>
         <Text style={styles.text}>
           this is a simple one page react native app
@@ -60,12 +76,12 @@ export default class App extends React.Component {
 
         <Touch
           style={[styles.block, styles.leftBlock]}
-          text="left"
+          text="left menu"
           onPress={() => this.menuOpen('showLeftMenu')}
         />
         <Touch
           style={[styles.block, styles.rightBlock]}
-          text="right"
+          text="right menu"
           onPress={() => this.menuOpen('showRightMenu')}
         />
 
@@ -82,23 +98,25 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center'
   },
+  text: {
+    color: colors.white
+  },
   block: {
     alignItems: 'center',
-    bottom: 16,
-    height: 72,
+    borderRadius: 4,
+    bottom: device.iPhoneX ? 32 : 16,
+    height: 64,
+    padding: 4,
     position: 'absolute',
     justifyContent: 'center',
-    width: 72
+    width: 64
   },
   leftBlock: {
     backgroundColor: colors.blue,
     left: 16
   },
   rightBlock: {
-    backgroundColor: colors.brown,
+    backgroundColor: colors.blue,
     right: 16
-  },
-  text: {
-    color: colors.white
   }
 });
