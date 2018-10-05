@@ -8,6 +8,7 @@
 - [helpful links](#helpful-links)
 - [adding linter](#adding-linter-config-to-another-react-project)
 - [assets](#assets)
+- [demo](#demo)
 
 ### install
 `yarn install`
@@ -59,3 +60,12 @@
 
 ### assets
 - [black rabbit icon](https://thenounproject.com/search/?q=rabbit&i=1211060) was bought (royalty-free license)
+
+### demo
+below is the inspiration for this single page app starter functionality with side by side comparison
+
+**version: 0.0.1**
+
+<p align="left">
+  <img src="creative/side-by-side.gif?raw=true" width="320" />
+</p>
