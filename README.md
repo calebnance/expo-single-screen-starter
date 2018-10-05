@@ -24,14 +24,15 @@
 - now download the Expo Client app on your preferred physical device:
   - **Android:** [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent)
   - **Apple:** [App Store](https://itunes.apple.com/us/app/expo-client/id982107779)
-- scan the QR code generated when this project build was started (expo start)
-- *for apple users:* if you have at least iOS 11, you can open your camera app up to scan the QR code.
+- scan the QR code generated when this project build started (expo start)
+  - *android users:* the QR scanner is built within the Expo Client app! 🤗
+  - *ios users:* iOS 11 and later; you can open your camera app to scan the QR code, apple made the Expo peeps remove the QR scanner from the app for some reason... 🤔 
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
 ### testing with jest
 - run: `npm test`
 - this will generate
-  - a report with the console
+  - a report within the console
   - a html code coverage report within `/coverage/`
 - ***helpful notes:***
   - for animation and delays, make sure you add: `jest.useFakeTimers();`
