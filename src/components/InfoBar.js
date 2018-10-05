@@ -26,9 +26,16 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     backgroundColor: colors.white,
     borderRadius: 4,
-    top: device.iPhoneX ? 64 : 20,
     paddingVertical: 8,
     position: 'absolute',
+    shadowColor: colors.black,
+    shadowOffset: {
+      height: 1,
+      width: 0
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 1,
+    top: device.iPhoneX ? 64 : 20,
     width: 200,
     zIndex: 70
   },
