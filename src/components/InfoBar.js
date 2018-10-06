@@ -3,13 +3,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
 import { colors, device } from '../api/constants';
 
+// component(s)
+import ProgressBar from './ProgressBar';
+
 class InfoBar extends React.PureComponent {
   render() {
-    const { text } = this.props;
+    const { progress, text } = this.props;
 
     return (
       <View style={styles.container}>
         <Text style={styles.text}>{text}</Text>
+        <ProgressBar progress={progress} />
       </View>
     );
   }
@@ -18,6 +22,7 @@ class InfoBar extends React.PureComponent {
 // type checking
 InfoBar.propTypes = {
   // required
+  progress: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired
 };
 
@@ -26,6 +31,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     backgroundColor: colors.white,
     borderRadius: 4,
+    overflow: 'hidden',
     paddingVertical: 8,
     position: 'absolute',
     shadowColor: colors.black,

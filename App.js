@@ -14,6 +14,7 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
+      progress: 10,
       showLeftMenu: false,
       showRightMenu: false,
       statusBar: 'light-content',
@@ -35,12 +36,13 @@ export default class App extends React.Component {
   }
 
   menuOpen(showMenu) {
-    this.setState({
+    this.setState(prevState => ({
+      progress: prevState.progress + 10,
       showLeftMenu: showMenu === 'showLeftMenu',
       showRightMenu: showMenu === 'showRightMenu',
       statusBar: 'dark-content',
       statusBarHidd: true
-    });
+    }));
   }
 
   renderMenus() {
@@ -59,7 +61,7 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { statusBar, statusBarHidd, statusBarTrans } = this.state;
+    const { progress, statusBar, statusBarHidd, statusBarTrans } = this.state;
 
     return (
       <View style={styles.container}>
@@ -70,7 +72,7 @@ export default class App extends React.Component {
           showHideTransition={statusBarTrans}
         />
 
-        <InfoBar text="info bar" />
+        <InfoBar progress={progress} text="info bar" />
 
         <Text style={styles.text}>welcome!</Text>
         <Text style={styles.text}>
