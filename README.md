@@ -7,7 +7,8 @@
 - [helpful links](#helpful-links)
 - [adding linter](#adding-linter-config-to-another-react-project)
 - [assets](#assets)
-- [demo](#demo)
+- [device learnings](#device-learnings)
+- [demo & release notes](#demo-and-release-notes)
 
 ## install
 `yarn install`
@@ -62,10 +63,23 @@
 ## assets
 - [black rabbit icon](https://thenounproject.com/search/?q=rabbit&i=1211060) was bought (royalty-free license)
 
-## demo
+## device learnings
+- **android:**
+- **ios:**
+  - The notch on iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max is **30px** from top
+
+## demo and release notes
 below is the inspiration for this single page app starter functionality with side by side comparison
 
-**version: 0.0.1**
+### version: 0.0.2 (current)
+- New features here
+
+### version: 0.0.1
+this starter app is at a good state
+
+- Menu screen that slides in from the left or the right (native StatusBar fades out on open)
+- persistant `<InfoBar />`
+- `<ProgressBar />` within `<InfoBar />`, that animates up by 10% each menu open (for example on usage)
 
 <p align="left">
   <img src="creative/side-by-side.gif?raw=true" width="320" />

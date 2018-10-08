@@ -19,7 +19,7 @@ export default class App extends React.Component {
       showRightMenu: false,
       statusBar: 'light-content',
       statusBarHidd: false,
-      statusBarTrans: 'slide'
+      statusBarTrans: 'fade'
     };
 
     this.menuClose = this.menuClose.bind(this);
