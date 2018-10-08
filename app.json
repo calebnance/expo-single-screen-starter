@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "expo-single-page",
-    "description": "simple react native single page application starter with expo",
-    "slug": "expo-single-page",
+    "name": "expo-single-screen-starter",
+    "description": "simple react native single screen application starter with expo",
+    "slug": "expo-single-screen-starter",
     "privacy": "public",
     "sdkVersion": "30.0.0",
     "platforms": ["ios", "android"],
