@@ -1,4 +1,4 @@
-# React Native Single Page Starter with Expo
+# React Native Single Screen Starter with Expo
 
 - [install](#install)
 - [development on a physical device](#development-on-a-physical-device)
@@ -69,7 +69,7 @@
   - The notch on iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max is **30px** from top
 
 ## demo and release notes
-below is the inspiration for this single page app starter functionality with side by side comparison
+below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
 - New features here
