@@ -27,7 +27,7 @@ exports[`App renders correctly 1`] = `
         },
         "shadowOpacity": 0.4,
         "shadowRadius": 1,
-        "top": 20,
+        "top": 44,
         "width": 200,
         "zIndex": 70,
       }
