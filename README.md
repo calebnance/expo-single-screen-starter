@@ -66,18 +66,18 @@
 ## device learnings
 - **android:**
 - **ios:**
-  - The notch on iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max is **30px** from top
+  - the notch on iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max is **30px** from top
 
 ## demo and release notes
 below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
-- New features here
+- updated react version from `16.3.1` to latest `16.6.0`
 
 ### version: 0.0.1
 this starter app is at a good state
 
-- Menu screen that slides in from the left or the right (native StatusBar fades out on open)
+- menu screen that slides in from the left or the right (native StatusBar fades out on open)
 - persistant `<InfoBar />`
 - `<ProgressBar />` within `<InfoBar />`, that animates up by 10% each menu open (for example on usage)
 
