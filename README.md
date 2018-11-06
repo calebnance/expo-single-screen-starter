@@ -72,7 +72,8 @@
 below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
-- updated react version from `16.3.1` to latest `16.6.0`
+- updated expo sdk from `30` to latest `31`
+- updated react version from `16.3.1` to latest `16.5.0`
 
 ### version: 0.0.1
 this starter app is at a good state
