@@ -4,7 +4,7 @@
     "description": "simple react native single screen application starter with expo",
     "slug": "expo-single-screen-starter",
     "privacy": "public",
-    "sdkVersion": "30.0.0",
+    "sdkVersion": "31.0.0",
     "platforms": ["ios", "android"],
     "version": "0.0.2",
     "orientation": "portrait",
