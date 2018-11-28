@@ -11,19 +11,16 @@
     "primaryColor": "#1d2d3a",
     "icon": "src/assets/icon.png",
     "splash": {
+      "backgroundColor": "#1d2d3a",
       "image": "src/assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#1d2d3a"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
+      "resizeMode": "cover"
     },
     "assetBundlePatterns": ["src/assets/**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
     "androidStatusBar": {
       "backgroundColor": "#1d2d3a"
+    },
+    "ios": {
+      "supportsTablet": true
     }
   }
 }
