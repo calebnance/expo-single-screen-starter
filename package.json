@@ -10,12 +10,14 @@
   ],
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "dev": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "eject": "expo eject",
-    "test": "node_modules/.bin/jest",
-    "testWatch": "node_modules/.bin/jest --watch"
+    "test": "jest --watch --coverage=false --changedSince=origin/master",
+    "testDebug": "jest -o --watch --coverage=false",
+    "testFinal": "jest",
+    "updateSnapshots": "jest -u --coverage=false"
   },
   "dependencies": {
     "expo": "^32.0.0",
@@ -33,18 +35,21 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "jest-expo": "^31.0.0",
+    "jest-expo": "^32.0.0",
     "prettier": "^1.14.3",
-    "react-test-renderer": "^16.5.2"
+    "react-test-renderer": "^16.8.6"
   },
   "jest": {
     "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|react-clone-referenced-element|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|sentry-expo|native-base))"
+    ],
     "collectCoverage": true,
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/coverage/**",
       "!**/node_modules/**",
-      "!**/vendor/**"
+      "!**/babel.config.js"
     ],
     "verbose": true
   },
