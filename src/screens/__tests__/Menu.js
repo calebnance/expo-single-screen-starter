@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Menu from '../../screens/Menu';
+import Menu from '../Menu';
 
 describe('<Menu />', () => {
   beforeEach(() => {

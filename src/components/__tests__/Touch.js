@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Touch from '../../components/Touch';
+import Touch from '../Touch';
 
 describe('<Touch />', () => {
   it('renders correctly', () => {
