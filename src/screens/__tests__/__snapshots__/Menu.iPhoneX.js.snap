@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Menu /> is hidden 1`] = `null`;
+
+exports[`<Menu /> renders correctly on left 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "left": -812,
+      "position": "absolute",
+      "width": "100%",
+      "zIndex": 50,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "opacity": 1,
+          "width": "20%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`<Menu /> renders correctly on right 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "left": 812,
+      "position": "absolute",
+      "width": "100%",
+      "zIndex": 50,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0)",
+        "flex": 1,
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      isTVSelectable={true}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "height": "100%",
+          "opacity": 1,
+          "width": "20%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;
