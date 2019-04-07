@@ -81,11 +81,13 @@ export default class App extends React.Component {
 
         <Touch
           style={[styles.block, styles.leftBlock]}
+          testId="leftMenu"
           text="left menu"
           onPress={() => this.menuOpen('showLeftMenu')}
         />
         <Touch
           style={[styles.block, styles.rightBlock]}
+          testId="rightMenu"
           text="right menu"
           onPress={() => this.menuOpen('showRightMenu')}
         />
