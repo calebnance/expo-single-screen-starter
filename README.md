@@ -79,7 +79,7 @@ below is the inspiration for this single screen app starter functionality with s
 ### version: 0.0.2 (current)
 - updated expo sdk from `31` to latest `32`
 - updated expo sdk from `30` to latest `31`
-- updated react version from `16.3.1` to latest `16.5.0`
+- updated react version from `16.3.1` to `16.5.0`
 
 ### version: 0.0.1
 this starter app is at a good state
