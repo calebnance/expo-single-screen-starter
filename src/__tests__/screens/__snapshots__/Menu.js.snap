@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Menu screen from left renders correctly 1`] = `
+exports[`<Menu /> is hidden 1`] = `null`;
+
+exports[`<Menu /> renders correctly on left 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "height": "100%",
@@ -14,7 +15,6 @@ exports[`Menu screen from left renders correctly 1`] = `
   }
 >
   <View
-    collapsable={undefined}
     style={
       Object {
         "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -24,16 +24,8 @@ exports[`Menu screen from left renders correctly 1`] = `
     }
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -47,13 +39,8 @@ exports[`Menu screen from left renders correctly 1`] = `
           "width": "20%",
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Object {
             "textAlign": "center",
@@ -67,9 +54,8 @@ exports[`Menu screen from left renders correctly 1`] = `
 </View>
 `;
 
-exports[`Menu screen from right renders correctly 1`] = `
+exports[`<Menu /> renders correctly on right 1`] = `
 <View
-  collapsable={undefined}
   style={
     Object {
       "height": "100%",
@@ -81,7 +67,6 @@ exports[`Menu screen from right renders correctly 1`] = `
   }
 >
   <View
-    collapsable={undefined}
     style={
       Object {
         "backgroundColor": "rgba(255, 255, 255, 0)",
@@ -91,16 +76,8 @@ exports[`Menu screen from right renders correctly 1`] = `
     }
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -114,13 +91,8 @@ exports[`Menu screen from right renders correctly 1`] = `
           "width": "20%",
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Object {
             "textAlign": "center",
@@ -133,5 +105,3 @@ exports[`Menu screen from right renders correctly 1`] = `
   </View>
 </View>
 `;
-
-exports[`Menu screen hidden 1`] = `null`;

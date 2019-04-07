@@ -8,6 +8,7 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "globals": {
+    "beforeEach": 0,
     "describe": 0,
     "expect": 0,
     "it": 0,

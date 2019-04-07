@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App renders correctly 1`] = `
+exports[`<App /> renders correctly 1`] = `
 <View
   style={
     Object {
@@ -34,9 +34,6 @@ exports[`App renders correctly 1`] = `
     }
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#d7263d",
@@ -79,7 +76,6 @@ exports[`App renders correctly 1`] = `
         }
       />
       <View
-        collapsable={undefined}
         style={
           Object {
             "backgroundColor": "#d7263d",
@@ -94,9 +90,6 @@ exports[`App renders correctly 1`] = `
     </View>
   </View>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#fff",
@@ -106,9 +99,6 @@ exports[`App renders correctly 1`] = `
     welcome!
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Object {
         "color": "#fff",
@@ -118,16 +108,8 @@ exports[`App renders correctly 1`] = `
     this is a simple one page react native app
   </Text>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    collapsable={undefined}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -149,13 +131,8 @@ exports[`App renders correctly 1`] = `
         "width": 64,
       }
     }
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "textAlign": "center",
@@ -166,16 +143,8 @@ exports[`App renders correctly 1`] = `
     </Text>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    collapsable={undefined}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -197,13 +166,8 @@ exports[`App renders correctly 1`] = `
         "width": 64,
       }
     }
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "textAlign": "center",

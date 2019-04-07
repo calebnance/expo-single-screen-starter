@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Touch from '../../components/Touch';
+import App from '../App';
 
-describe('<Touch />', () => {
+describe('<App />', () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<Touch onPress={jest.fn()} />).toJSON();
+    const tree = renderer.create(<App />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
