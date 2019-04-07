@@ -6,18 +6,12 @@ import { colors, device } from '../api/constants';
 // component(s)
 import ProgressBar from './ProgressBar';
 
-class InfoBar extends React.PureComponent {
-  render() {
-    const { progress, text } = this.props;
-
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>{text}</Text>
-        <ProgressBar progress={progress} />
-      </View>
-    );
-  }
-}
+const InfoBar = ({ progress, text }) => (
+  <View style={styles.container}>
+    <Text style={styles.text}>{text}</Text>
+    <ProgressBar progress={progress} />
+  </View>
+);
 
 // type checking
 InfoBar.propTypes = {

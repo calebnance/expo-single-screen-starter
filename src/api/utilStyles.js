@@ -1,6 +1,6 @@
 // utility styles
 // /////////////////////////////////////////////
 export default {
-  opacityActive: 0.8,
-  opacityActiveFull: 1
+  activeO: 0.8,
+  activeOFull: 1
 };
