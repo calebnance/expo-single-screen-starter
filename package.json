@@ -6,7 +6,7 @@
   "license": "MIT",
   "keywords": [
     "expo",
-    "react-native"
+    "react native"
   ],
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
