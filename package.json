@@ -53,5 +53,11 @@
     ],
     "verbose": true
   },
-  "private": true
+  "private": true,
+  "prettier": {
+    "singleQuote": true
+  },
+  "engines": {
+    "node": ">=10.3.0"
+  }
 }
