@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import PropTypes from 'prop-types';
-import { colors, device } from '../api/constants';
+import { colors, device } from '../constants';
 
-// component(s)
+// components
 import ProgressBar from './ProgressBar';
 
 const InfoBar = ({ progress, text }) => (
