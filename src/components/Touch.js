@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import { utilStyles } from '../api/constants';
+import { gStyle } from '../constants';
 
 const Touch = ({ activeO, onPress, style, text, textStyle }) => (
   <TouchableOpacity activeOpacity={activeO} onPress={onPress} style={style}>
@@ -11,7 +11,7 @@ const Touch = ({ activeO, onPress, style, text, textStyle }) => (
 
 // default props
 Touch.defaultProps = {
-  activeO: utilStyles.activeO,
+  activeO: gStyle.activeO,
   style: {},
   text: '',
   textStyle: {

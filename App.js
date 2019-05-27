@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar, StyleSheet, Text, View } from 'react-native';
-import { colors, device } from './src/api/constants';
+import { colors, device } from './src/constants';
 
 // screens
 import Menu from './src/screens/Menu';

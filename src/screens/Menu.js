@@ -1,9 +1,9 @@
 import React from 'react';
 import { Animated, ScrollView, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
-import { colors, device } from '../api/constants';
+import { colors, device } from '../constants';
 
-// component(s)
+// components
 import Touch from '../components/Touch';
 
 class Menu extends React.Component {
