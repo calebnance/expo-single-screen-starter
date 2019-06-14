@@ -118,13 +118,11 @@ class Menu extends React.Component {
   }
 }
 
-// default props
 Menu.defaultProps = {
   direction: 'left',
   show: false
 };
 
-// type checking
 Menu.propTypes = {
   // required
   onClose: PropTypes.func.isRequired,

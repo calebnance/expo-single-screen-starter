@@ -45,7 +45,6 @@ class ProgressBar extends React.Component {
   }
 }
 
-// default props
 ProgressBar.defaultProps = {
   bar: colors.black20,
   duration: 1000,
@@ -53,7 +52,6 @@ ProgressBar.defaultProps = {
   height: 4
 };
 
-// type checking
 ProgressBar.propTypes = {
   // required
   progress: PropTypes.number.isRequired,

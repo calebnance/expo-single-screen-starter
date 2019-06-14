@@ -13,7 +13,6 @@ const InfoBar = ({ progress, text }) => (
   </View>
 );
 
-// type checking
 InfoBar.propTypes = {
   // required
   progress: PropTypes.number.isRequired,

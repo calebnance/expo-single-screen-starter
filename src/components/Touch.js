@@ -13,7 +13,6 @@ const Touch = ({ onPress, style, text, textStyle }) => (
   </TouchableOpacity>
 );
 
-// default props
 Touch.defaultProps = {
   style: {},
   text: '',
@@ -22,7 +21,6 @@ Touch.defaultProps = {
   }
 };
 
-// type checking
 Touch.propTypes = {
   // required
   onPress: PropTypes.func.isRequired,
