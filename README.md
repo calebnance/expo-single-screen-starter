@@ -90,5 +90,5 @@ this starter app is at a good state
 - `<ProgressBar />` within `<InfoBar />`, that animates up by 10% each menu open (for example on usage)
 
 <p align="left">
-  <img src="creative/side-by-side.gif?raw=true" width="320" />
+  <img src="screenshots/side-by-side.gif?raw=true" width="320" />
 </p>
