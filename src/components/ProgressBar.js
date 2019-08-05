@@ -1,6 +1,6 @@
 import React from 'react';
-import { Animated, StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
+import { Animated, StyleSheet, View } from 'react-native';
 import { colors } from '../constants';
 
 class ProgressBar extends React.Component {
