@@ -15,6 +15,7 @@
     "lint": "eslint ./src",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "web": "expo start --web",
     "eject": "expo eject",
     "test": "jest --watch --coverage=false --changedSince=origin/master",
     "testDebug": "jest -o --watch --coverage=false",
@@ -22,23 +23,27 @@
     "updateSnapshots": "jest -u --coverage=false"
   },
   "dependencies": {
-    "expo": "^33.0.5",
+    "expo": "^34.0.3",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz"
+    "react-dom": "^16.8.6",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-34.0.0.tar.gz",
+    "react-native-web": "^0.11.5"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.2",
     "babel-preset-expo": "^5.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.17.3",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-import-helpers": "^1.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.2",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react": "^7.14.2",
     "babel-preset-expo": "^5.0.0",
     "jest-expo": "^33.0.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "react-test-renderer": "^16.8.6"
   },
   "jest": {
