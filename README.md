@@ -77,6 +77,7 @@
 below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
+- updated expo sdk from `33` to latest `34`
 - updated expo sdk from `32` to latest `33`
 - updated expo sdk from `31` to latest `32`
 - updated expo sdk from `30` to latest `31`
