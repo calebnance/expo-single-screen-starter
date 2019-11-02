@@ -77,8 +77,9 @@
 below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
-- updated expo sdk from `33` to latest `34`
-- updated expo sdk from `32` to latest `33`
+- upgraded to [Expo SDK 35](https://blog.expo.io/expo-sdk-35-is-now-available-beee0dfafbf4)
+- upgraded to [Expo SDK 34](https://blog.expo.io/expo-sdk-34-is-now-available-4f7825239319)
+- upgraded to [Expo SDK 33](https://blog.expo.io/expo-sdk-v33-0-0-is-now-available-52d1c99dfe4c)
 - updated expo sdk from `31` to latest `32`
 - updated expo sdk from `30` to latest `31`
 - updated react version from `16.3.1` to `16.5.0`
