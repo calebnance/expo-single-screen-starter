@@ -1,5 +1,11 @@
 # Single Screen Starter with Expo
 
+[![made with expo](https://img.shields.io/badge/MADE%20WITH%20EXPO-000.svg?style=for-the-badge&logo=expo&labelColor=4630eb&logoWidth=20)](https://github.com/expo/expo) [![supports iOS and Android](https://img.shields.io/badge/Platforms-Native-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+
+[![follow @calebnance](https://img.shields.io/twitter/follow/calebnance.svg?style=for-the-badge&logo=TWITTER&logoColor=FFFFFF&labelColor=00aced&logoWidth=20&color=lightgray)](https://twitter.com/calebnance)
+
+## Table of Contents
+
 - [install](#install)
 - [development on a physical device](#development-on-a-physical-device)
 - [testing with jest](#testing-with-jest)
@@ -11,11 +17,15 @@
 - [demo & release notes](#demo-and-release-notes)
 
 ## install
-`yarn` or `yarn install`
 
-***note:*** *make sure you at least have node ^v10.8.0*
+First, make sure you have Expo CLI installed: `npm install -g expo-cli`
+
+Install: `yarn` or `yarn install`
+
+Run Project Locally: `expo start` or `yarn dev`
 
 ## development on a physical device
+
 - first, your machine and physical device should be on the same wifi connection
 - make sure you have Expo CLI installed globally, if not run:
   - `npm install -g expo-cli`
@@ -31,6 +41,7 @@
 - having issues? check the [installation page](https://docs.expo.io/versions/latest/introduction/installation) for any pitfalls you may have.
 
 ## testing with jest
+
 - `yarn test`
   - **"jest --watch --coverage=false --changedSince=origin/master"**
 - `yarn testDebug`
@@ -46,7 +57,12 @@
 ***helpful notes:*** for animation and delays, make sure you add: `jest.useFakeTimers();`
 
 ## linting: prettier and airbnb config
-- make sure you have [prettier package](https://atom.io/packages/prettier-atom) installed on your atom/vscode editor
+
+- run: `yarn lint` for a list of linting warnings/error in cli
+- prettier and airbnb config
+- make sure you have prettier package installed:
+  - [prettier for atom](https://atom.io/packages/prettier-atom)
+  - [prettier for vscode](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - then make sure to enable these options (packages → prettier):
   - eslint integration
   - stylelint integration
@@ -54,10 +70,12 @@
 - be aware of the `.prettierignore` file
 
 ## helpful links
+
 - [using nvm](https://davidwalsh.name/nvm)
 - [setup prettier/eslint within project](https://blog.echobind.com/integrating-prettier-eslint-airbnb-style-guide-in-vscode-47f07b5d7d6a)
 
 ## adding linter config to another react project
+
 - yarn:
   - `yarn add eslint eslint-config-airbnb eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-prettier eslint-plugin-react prettier --dev`
 - npm:
@@ -68,15 +86,19 @@
   - `.prettierrc`
 
 ## assets
+
 - [black rabbit icon](https://thenounproject.com/search/?q=rabbit&i=1211060) was bought (royalty-free license)
 
 ## device learnings
+
 - **ios:** the notch on iPhoneX, iPhoneXs, iPhoneXr, iPhoneXs Max is **30px** from top
 
 ## demo and release notes
+
 below is the inspiration for this single screen app starter functionality with side by side comparison
 
 ### version: 0.0.2 (current)
+
 - upgraded to [Expo SDK 35](https://blog.expo.io/expo-sdk-35-is-now-available-beee0dfafbf4)
 - upgraded to [Expo SDK 34](https://blog.expo.io/expo-sdk-34-is-now-available-4f7825239319)
 - upgraded to [Expo SDK 33](https://blog.expo.io/expo-sdk-v33-0-0-is-now-available-52d1c99dfe4c)
@@ -85,6 +107,7 @@ below is the inspiration for this single screen app starter functionality with s
 - updated react version from `16.3.1` to `16.5.0`
 
 ### version: 0.0.1
+
 this starter app is at a good state
 
 - menu screen that slides in from the left or the right (native StatusBar fades out on open)
