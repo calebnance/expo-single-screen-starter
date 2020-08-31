@@ -30,12 +30,14 @@ class Menu extends React.Component {
     Animated.timing(backgroundColor, {
       delay: 100,
       duration: 400,
-      toValue: 10
+      toValue: 10,
+      useNativeDriver: false
     }).start();
 
     Animated.timing(position, {
       duration: 400,
-      toValue: 0
+      toValue: 0,
+      useNativeDriver: false
     }).start();
   }
 
@@ -45,12 +47,14 @@ class Menu extends React.Component {
 
     Animated.timing(backgroundColor, {
       duration: 100,
-      toValue: 0
+      toValue: 0,
+      useNativeDriver: false
     }).start();
 
     Animated.timing(position, {
       duration: 400,
-      toValue: positionStart
+      toValue: positionStart,
+      useNativeDriver: false
     }).start(() => {
       onClose();
     });
