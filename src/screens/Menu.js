@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   },
   scrollView: {
     backgroundColor: colors.brown,
-    paddingTop: device.iPhoneX ? 44 : 0,
+    paddingTop: device.iPhoneNotch ? 44 : 0,
     width: '80%'
   },
   closeArea: {
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     width: '100%'
   },
   listSpacer: {
-    height: device.iPhoneX ? 44 : 0
+    height: device.iPhoneNotch ? 44 : 0
   }
 });
 

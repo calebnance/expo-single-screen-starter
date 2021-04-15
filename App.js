@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
   block: {
     alignItems: 'center',
     borderRadius: 4,
-    bottom: device.iPhoneX ? 32 : 16,
+    bottom: device.iPhoneNotch ? 32 : 16,
     height: 64,
     padding: 4,
     position: 'absolute',
