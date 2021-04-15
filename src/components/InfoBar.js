@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.4,
     shadowRadius: 1,
-    top: device.iPhoneX ? 64 : 44,
+    top: device.iPhoneNotch ? 64 : 44,
     width: 200,
     zIndex: 70
   },
