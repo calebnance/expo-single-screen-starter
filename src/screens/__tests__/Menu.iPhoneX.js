@@ -11,12 +11,18 @@ import Touch from '../../components/Touch';
 //   return Platform;
 // });
 //
+// jest.mock('Dimensions', () => {
+//   const Dimensions = jest.requireActual('Dimensions');
+//   Dimensions.get = jest.fn().mockReturnValue({ height: 896, width: 812 });
+//
+//   return Dimensions;
+// });
 
-jest.mock('Dimensions', () => {
-  const Dimensions = jest.requireActual('Dimensions');
-  Dimensions.get = jest.fn().mockReturnValue({ height: 896, width: 812 });
-
-  return Dimensions;
+// shoutout: https://github.com/facebook/react-native/issues/26579#issuecomment-535765528
+jest.mock('react-native/Libraries/Utilities/Dimensions', () => {
+  return {
+    get: jest.fn().mockReturnValue({ height: 896, width: 812 })
+  };
 });
 
 describe('<Menu />', () => {

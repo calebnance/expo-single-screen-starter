@@ -244,7 +244,8 @@ exports[`<Menu /> renders correctly on left 1`] = `
     </RCTScrollView>
     <View
       accessible={true}
-      isTVSelectable={true}
+      focusable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -296,7 +297,8 @@ exports[`<Menu /> renders correctly on right 1`] = `
   >
     <View
       accessible={true}
-      isTVSelectable={true}
+      focusable={true}
+      onClick={[Function]}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}

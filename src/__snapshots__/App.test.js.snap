@@ -109,7 +109,8 @@ exports[`<App /> renders correctly 1`] = `
   </Text>
   <View
     accessible={true}
-    isTVSelectable={true}
+    focusable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -144,7 +145,8 @@ exports[`<App /> renders correctly 1`] = `
   </View>
   <View
     accessible={true}
-    isTVSelectable={true}
+    focusable={true}
+    onClick={[Function]}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
