@@ -10,7 +10,7 @@
 - [Features](#features)
 - [Testing with Jest](#testing-with-jest)
 - [Linting](#linting)
-- [Assets](#assets)
+- [Assets Used](#assets-used)
 - [Device Learnings](#device-learnings)
 - [Release Notes](#release-notes)
 - [Demo](#demo)
