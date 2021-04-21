@@ -41,7 +41,7 @@ Run Project Locally: `yarn dev` or `yarn start`
   - this will generate
     - a report within the console
     - a html code coverage report within `/coverage/`
-    - <img src="screenshots/jest-coverage.png?raw=true" width="480" />
+    - <img src="screenshots/jest-coverage.png?raw=true" />
 - `yarn updateSnapshots`
   - **"jest -u --coverage=false"**
 
