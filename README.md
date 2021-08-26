@@ -1,6 +1,4 @@
-# Single Screen Starter with Expo
-
-[![made with expo](https://img.shields.io/badge/MADE%20WITH%20EXPO-000.svg?style=for-the-badge&logo=expo&labelColor=4630eb&logoWidth=20)](https://github.com/expo/expo) [![supports iOS and Android](https://img.shields.io/badge/Platforms-Native-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+# Single Screen Starter with React Native / Expo
 
 [![follow @calebnance](https://img.shields.io/twitter/follow/calebnance.svg?style=for-the-badge&logo=TWITTER&logoColor=FFFFFF&labelColor=00aced&logoWidth=20&color=lightgray)](https://twitter.com/calebnance)
 
@@ -25,7 +23,7 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ## Features
 
-- Expo SDK 41
+- Expo SDK 42
 - iOS, Android and PWA (Web App)
 - Test with Jest
 - PropTypes
@@ -67,10 +65,9 @@ Run Project Locally: `yarn dev` or `yarn start`
 
 ## Release Notes
 
-below is the inspiration for this single screen app starter functionality with side by side comparison
-
 ### version: 0.0.2 (current)
 
+- upgraded to [Expo SDK 42](https://blog.expo.io/expo-sdk-42-579aee2348b6)
 - upgraded to [Expo SDK 41](https://blog.expo.io/expo-sdk-41-12cc5232f2ef)
 - upgraded to [Expo SDK 40](https://blog.expo.io/expo-sdk-40-is-now-available-d4d73e67da33)
 - upgraded to [Expo SDK 39](https://blog.expo.io/expo-sdk-39-is-now-available-4c10aa825e3f)
@@ -93,6 +90,8 @@ this starter app is at a good state
 - `<ProgressBar />` within `<InfoBar />`, that animates up by 10% each menu open (for example on usage)
 
 ## Demo
+
+below is the inspiration for this single screen app starter functionality with side by side comparison
 
 <p align="left">
   <img src="screenshots/side-by-side.gif?raw=true" width="320" />
